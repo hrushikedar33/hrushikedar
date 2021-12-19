@@ -1,0 +1,17 @@
+.min-page {
+  min-height: 75vh;
+}
+
+/* GLOW */
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.02);
+}
+
+#skillId:hover > svg {
+  fill: #000;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}

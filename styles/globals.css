@@ -1,16 +1,102 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --color-primary: 58, 133, 255;
+  --color-primary-dark: 58, 62, 255;
+  --color-secondary: 17, 100, 39;
+  --color-secondary-dark: 150, 24, 39;
+  --color-background: 255, 255, 255;
+  --color-background-dark: 17, 24, 90;
 }
 
 * {
-  box-sizing: border-box;
+  margin: 0;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: black;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+body {
+  @apply bg-background;
+}
+
+@layer base {
+  h1 {
+    @apply text-xl font-heading font-bold md:text-3xl;
+  }
+  h2 {
+    @apply font-heading text-xl md:text-2xl;
+  }
+  h3 {
+    @apply font-text text-base md:text-lg;
+  }
+  h4 {
+    @apply font-heading text-xs md:text-lg;
+  }
+  h5 {
+    @apply font-text text-xs md:text-base;
+  }
+}
+
+.main-set {
+  @apply lg:container lg:mx-auto md:px-20 2xl:px-40;
+}
+
+.transition-effect {
+  @apply transition duration-500 ease-in-out;
+}
+
+.my-btn {
+  @apply py-1 px-3 font-heading text-sm md:text-base shadow-lg rounded-md;
+}
+
+.my-btn-sm {
+  @apply py-1 px-2 font-heading text-xs shadow-lg rounded;
+}
+
+hr {
+  @apply border-2 border-primary bg-primary mt-1.5 my-4;
+}
+
+.section {
+  @apply my-24 md:py-8;
+}
+
+.start-heading {
+  @apply text-center md:text-left text-3xl md:text-5xl;
+}
+
+.center-itm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.grid-layout {
+  @apply grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 px-2 md:px-0;
+}
+
+.card-img {
+  @apply h-28 md:h-40 w-full rounded-md shadow-lg;
+}
+
+.x-adj {
+  @apply px-2 md:px-0;
+}
+
+/* NAVBAR */
+.nav-link {
+  @apply py-2 px-4 ml-2 font-heading rounded
+  hover:bg-primary text-white;
+}
+
+.nav-style {
+  @apply shadow-md
+  bg-primary/10;
+}
+/* NAVBAR */
