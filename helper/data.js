@@ -128,6 +128,7 @@ const userData = {
   // project data
   projectsData: [
     {
+      slug: "devfolio",
       title: "Devfolio",
       link: "",
       desc: "A simple portfolio website template built on top of flutter",
@@ -136,15 +137,17 @@ const userData = {
       skills: ["Flutter-Web", "Dart"],
       screenshotsUrl: "https://github.com/hrushikedar33/devfolio-template",
     },
+    // {
+    //   slug: "hey-fella",
+    //   title: "hey-fella",
+    //   link: "",
+    //   desc: "A native mobile application which allows one to one chatting based on Flutter as frontend and Firebase as backend.",
+    //   githubUrl: "https://github.com/hrushikedar33/hey-fella",
+    //   skills: ["Flutter", "Dart", "Firebase"],
+    //   screenshotsUrl: "https://github.com/hrushikedar33/devfolio-template",
+    // },
     {
-      title: "hey-fella",
-      link: "",
-      desc: "A native mobile application which allows one to one chatting based on Flutter as frontend and Firebase as backend.",
-      githubUrl: "https://github.com/hrushikedar33/hey-fella",
-      skills: ["Flutter", "Dart", "Firebase"],
-      screenshotsUrl: "https://github.com/hrushikedar33/devfolio-template",
-    },
-    {
+      slug: "hey-fella",
       title: "hey-fella",
       link: "",
       desc: "(WhatsApp Clone) A native mobile application which is whats app clone uses REST API and Soclet.io as a backend and flutter as frontend.",
@@ -153,6 +156,7 @@ const userData = {
       screenshotsUrl: "https://github.com/hrushikedar33/devfolio-template",
     },
     {
+      slug: "headlines",
       title: "Headlines",
       link: "",
       desc: "A native mobile application which is for news headlines and short description about news using Flutter as frontend.",
@@ -161,6 +165,7 @@ const userData = {
       screenshotsUrl: "https://github.com/hrushikedar33/devfolio-template",
     },
     {
+      slug: "tic-tac-toe",
       title: "Tic-Tac-Toe",
       link: "",
       desc: "Contributed to our flagship product - Panna - which is an ",
@@ -211,6 +216,27 @@ const userData = {
 
   // Timeline page data
   experience: [
+    {
+      title: "Graduation",
+      company: "PCCOE, Pune",
+      year: "2022 (Expected)",
+      companyLink: "",
+      desc: "Major in Computer Science and Engineering with a CGPA of 9.08",
+    },
+    {
+      title: "Graduation",
+      company: "PCCOE, Pune",
+      year: "2022 (Expected)",
+      companyLink: "",
+      desc: "Major in Computer Science and Engineering with a CGPA of 9.08",
+    },
+    {
+      title: "Graduation",
+      company: "PCCOE, Pune",
+      year: "2022 (Expected)",
+      companyLink: "",
+      desc: "Major in Computer Science and Engineering with a CGPA of 9.08",
+    },
     {
       title: "Graduation",
       company: "PCCOE, Pune",

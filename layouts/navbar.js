@@ -1,20 +1,25 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Menu from "../components/Menu";
+
 function Navbar() {
+  const router = useRouter();
+
   const pages = [
     {
-      name: "Home",
+      name: "HOME",
       link: "/",
     },
     {
-      name: "Projects",
+      name: "PROJECTS",
       link: "/projects",
     },
     {
-      name: "Timeline",
+      name: "TIMELINE",
       link: "/timeline",
     },
     {
-      name: "Contact",
+      name: "CONTACT",
       link: "/contact",
     },
   ];
@@ -26,15 +31,18 @@ function Navbar() {
           {pages.map((x, i) => (
             <Link key={i} href={x.link} passHref>
               <span
-                className="py-2 px-4 ml-2 font-heading rounded
-            hover:bg-primary hover:text-white transition-effect"
+                className={
+                  router.pathname == x.link ? "active nav-link" : "nav-link"
+                }
               >
                 {x.name}
               </span>
             </Link>
           ))}
         </div>
-        <div className="block md:hidden">{/* DRAWER */}</div>
+        <div className="block md:hidden">
+          <Menu />
+        </div>
       </div>
     </nav>
   );

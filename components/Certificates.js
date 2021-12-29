@@ -17,7 +17,7 @@ function Certificates() {
               key={i}
               className="project-card rounded-lg grow h-28 md:h-40 border-4"
               style={{
-                "background-image": `linear-gradient(
+                backgroundImage: `linear-gradient(
                   180deg,
                   rgba(44, 44, 44, 0.6) 38%,
                   rgba(22, 22, 22, 0.9) 100%

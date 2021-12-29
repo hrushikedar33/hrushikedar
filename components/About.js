@@ -10,9 +10,9 @@ function About() {
       {/* className="start-heading" */}
       <hr />
       <div className="mt-8 md:grid md:grid-cols-12 md:gap-6 place-items-center">
-        <div className="flex md:hidden justify-center col-span-4 mb-3">
+        <div className="flex md:hidden justify-center col-span-4 mb-5">
           <Image
-            className="h-40 rounded-full border-solid border-2 border-primary"
+            className="h-20 rounded-full border-solid border-2 border-primary"
             src={avatarImage}
             alt="Hrushikesh Kedar"
           ></Image>

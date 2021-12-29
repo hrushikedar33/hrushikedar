@@ -2,6 +2,7 @@ import Head from "next/head";
 import About from "../components/About";
 import Certificates from "../components/Certificates";
 import Hero from "../components/Hero";
+import Icons from "../components/Icons";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* CERTIFICATES */}
       <Certificates />
+
+      {/* Contact */}
+      <Icons />
     </div>
   );
 }

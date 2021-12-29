@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="flex justify-center pb-0">
       <div className="text-center w-full">
-        <Icons />
+        {/* <Icons /> */}
         <hr className="mt-1 mb-2" />
         <h3>
           {new Date().getFullYear()} - <a href="">hrushikedar.me</a>

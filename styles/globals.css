@@ -1,10 +1,10 @@
 :root {
-  --color-primary: 58, 133, 255;
+  --color-primary: 147, 160, 169;
   --color-primary-dark: 58, 62, 255;
-  --color-secondary: 17, 100, 39;
+  --color-secondary: 210, 96, 10;
   --color-secondary-dark: 150, 24, 39;
   --color-background: 255, 255, 255;
-  --color-background-dark: 17, 24, 90;
+  --color-background-dark: 31, 51, 57;
 }
 
 * {
@@ -86,13 +86,14 @@ hr {
 }
 
 .x-adj {
-  @apply px-2 md:px-0;
+  @apply px-8 md:px-0;
 }
 
 /* NAVBAR */
 .nav-link {
-  @apply py-2 px-4 ml-2 font-heading rounded
-  hover:bg-primary text-white;
+  @apply py-2 px-3.5 ml-2 font-heading rounded
+  hover:bg-primary hover:text-white text-black
+  transition-effect cursor-pointer;
 }
 
 .nav-style {
@@ -100,3 +101,7 @@ hr {
   bg-primary/10;
 }
 /* NAVBAR */
+
+.active {
+  @apply bg-primary text-white;
+}
