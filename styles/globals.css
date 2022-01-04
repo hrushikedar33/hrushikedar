@@ -66,6 +66,7 @@ hr {
 
 .section {
   @apply my-24 md:py-8;
+  /* //TODO: change the md:my:20 */
 }
 
 .start-heading {
@@ -104,4 +105,24 @@ hr {
 
 .active {
   @apply bg-primary text-white;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
 }

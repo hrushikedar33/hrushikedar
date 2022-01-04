@@ -1,6 +1,19 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+import userData from "../helper/data";
+import Image from "next/image";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
+  const router = useRouter();
+  const { projectsData } = userData;
+  const { slug } = router.query;
+  // const project = projectsData.find((project) => project.slug === slug);
+
+  const myLoader = ({ src }) => {
+    return `https://firebasestorage.googleapis.com/v0/b/hrushikesh-kedar.appspot.com/o/tic-tac-toe%2F${src}?alt=media&token=49ce9181-55c1-48e3-b71f-1c3f1879ae29`;
+  };
+
   return (
     <div className="x-adj">
       <Head>
@@ -9,7 +22,32 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="text-3xl bg-primary p-3">Projects</div>
+      <div className="mt-8 md:grid md:grid-cols-2 grid-cols-1">
+        {projectsData.map(({ title, slug, desc, skills, githubUrl }, i) => (
+          <>
+            <div className="flex" key={i}>
+              <div className="mr-2 mb-2">
+                <ProjectCard
+                  title={title}
+                  slug={slug}
+                  desc={desc}
+                  skills={skills}
+                  githubUrl={githubUrl}
+                />
+              </div>
+              <div className="">
+                <Image
+                  loader={myLoader}
+                  alt={title}
+                  src="1.webp"
+                  width={200}
+                  height={385}
+                ></Image>
+              </div>
+            </div>
+          </>
+        ))}
+      </div>
     </div>
   );
 }

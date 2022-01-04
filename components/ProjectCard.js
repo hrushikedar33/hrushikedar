@@ -9,34 +9,49 @@ function ProjectCard({ title, slug, desc, skills, githubUrl }) {
       rel="noopener noreferrer"
       passHref
     >
-      <div className="bg-primary p-3 rounded grow">
+      <div className="relative bg-primary p-3 rounded hover:cursor-pointer h-80 md:w-72 min-h-full w-60">
         <h1>{title}</h1>
         <p className="h-24 md:h-20">{desc}</p>
-        <div className="mt-3 flex flex-wrap ">
-          {skills.map((x, i) => (
-            <a key={i}>
-              <div className="p-2 rounded-xl bg-secondary text-white mr-2 mt-1 text-xs">
-                {x}
+        <div className="absolute inset-x-5 bottom-3">
+          <h6 className="font-semibold mb-2">Tech Stack:</h6>
+          <div className="flex">
+            {skills.map((x, i) => (
+              <a key={i}>
+                <div className="p-2 rounded-xl bg-secondary text-white mr-2 mt-1 text-xs">
+                  {x}
+                </div>
+              </a>
+            ))}
+          </div>
+          <hr className="bg-black mb-1" />
+
+          <div className="flex justify-between align-baseline">
+            <h6 className="font-semibold text-xl">Link:</h6>
+            <div className="flex">
+              <div className="mr-2">
+                <a href={githubUrl} rel="noopener noreferrer" target="_blank">
+                  <svg
+                    role="img"
+                    className="w-8 h-8"
+                    title={"GitHub"}
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>{"GitHub"}</title>
+                    <path d={siGithub.path}></path>
+                  </svg>
+                </a>
               </div>
-            </a>
-          ))}
-          <a
-            href={githubUrl}
-            className="flex justify-center p-2 grow hover:bg-primary rounded-xl"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <svg
-              role="img"
-              className="w-8 h-8"
-              title={"GitHub"}
-              // viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>{"GitHub"}</title>
-              <path d={siGithub.path}></path>
-            </svg>
-          </a>
+              <div className="my-btn bg-secondary inline-block rounded-md hover:bg-secondary">
+                {/* TODO: add link */}
+                <a href="" rel="noopener noreferrer" target="_blank">
+                  <p className="text-semibold px-2 py-1 text-black hover:text-white">
+                    Download
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Link>

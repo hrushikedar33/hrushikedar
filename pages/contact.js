@@ -100,7 +100,7 @@ export default function Contact() {
       <div className="section p-8 md:grid  md:grid-cols-2 gap-6 px-5 lg:px-20 ">
         <div className="mx-1 mb-10 ">
           <div className="flex justify-between">
-            <h1 className="text-4xl font-bold mt-4">Lets talk ;)</h1>
+            <h1>Lets talk ;)</h1>
           </div>
           <hr />
           <Icons direction />
@@ -114,10 +114,6 @@ export default function Contact() {
                 Resume
               </p>
             </a>
-          </div>
-
-          <div className="hidden">
-            <Icons />
           </div>
         </div>
         <form
