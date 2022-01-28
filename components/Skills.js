@@ -14,14 +14,14 @@ function Skills() {
             href={x.url}
             key={i}
             id="skillId"
-            className="flex justify-center p-3 grow bg-primary hover:bg-white rounded-xl"
+            className="flex justify-center p-2 md:p-3 grow bg-primary hover:bg-white rounded-xl"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               role="img"
               id="abc"
-              className="w-16 h-16 fill-white"
+              className="w-12 h-12 md:h-16 md:w-16 fill-white"
               title={x.name}
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

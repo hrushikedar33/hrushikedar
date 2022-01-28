@@ -27,9 +27,9 @@ function Certificates() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h4 className="h-20 md:h-32 flex flex-col justify-end items-center text-center text-white">
+              <h5 className="h-20 md:h-32 flex flex-col justify-end items-center text-center text-white">
                 {x.name}
-              </h4>
+              </h5>
             </a>
           ))}
           <a

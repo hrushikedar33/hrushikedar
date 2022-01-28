@@ -9,7 +9,7 @@ function ProjectCard({ title, slug, desc, skills, githubUrl }) {
       rel="noopener noreferrer"
       passHref
     >
-      <div className="relative bg-primary p-3 rounded hover:cursor-pointer h-80 md:w-72 min-h-full w-60">
+      <div className="relative bg-primary p-3 rounded hover:cursor-pointer h-80 min-h-full w-50 min-w-full">
         <h1>{title}</h1>
         <p className="h-24 md:h-20">{desc}</p>
         <div className="absolute inset-x-5 bottom-3">
@@ -40,14 +40,6 @@ function ProjectCard({ title, slug, desc, skills, githubUrl }) {
                     <title>{"GitHub"}</title>
                     <path d={siGithub.path}></path>
                   </svg>
-                </a>
-              </div>
-              <div className="my-btn bg-secondary inline-block rounded-md hover:bg-secondary">
-                {/* TODO: add link */}
-                <a href="" rel="noopener noreferrer" target="_blank">
-                  <p className="text-semibold px-2 py-1 text-black hover:text-white">
-                    Download
-                  </p>
                 </a>
               </div>
             </div>

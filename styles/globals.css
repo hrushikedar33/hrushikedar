@@ -23,7 +23,11 @@ body {
 }
 
 body {
-  @apply bg-background;
+  @apply bg-background font-text;
+}
+
+#__next {
+  @apply min-h-screen flex flex-col;
 }
 
 @layer base {
@@ -45,7 +49,7 @@ body {
 }
 
 .main-set {
-  @apply lg:container lg:mx-auto md:px-20 2xl:px-40;
+  @apply lg:container lg:mx-auto md:px-20 2xl:px-40 flex-1;
 }
 
 .transition-effect {
@@ -126,3 +130,17 @@ hr {
 .scrollbar::-webkit-scrollbar-thumb:hover {
   background: #c0a0b9;
 }
+
+/* CARD */
+.project-card {
+  display: block;
+  padding: 20px;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  -webkit-text-size-adjust: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 0;
+}
+/* CARD */

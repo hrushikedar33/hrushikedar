@@ -9,12 +9,15 @@ function About() {
       <h1>About Me</h1>
       {/* className="start-heading" */}
       <hr />
-      <div className="mt-8 md:grid md:grid-cols-12 md:gap-6 place-items-center">
-        <div className="flex md:hidden justify-center col-span-4 mb-5">
+      <div className="mt-8 md:grid md:grid-cols-12 md:gap-6 grid-cols-1 place-items-center">
+        <div className="flex md:hidden justify-center mb-5">
           <Image
-            className="h-20 rounded-full border-solid border-2 border-primary"
+            className="rounded-2xl border-solid border-2 border-primary"
             src={avatarImage}
             alt="Hrushikesh Kedar"
+            height={240}
+            width={200}
+            // TODO: Change height and width
           ></Image>
         </div>
         <div
@@ -27,10 +30,10 @@ function About() {
           <Image
             src={avatarImage}
             alt="Hrushikesh Kedar"
-            className="h-72 rounded-full border-solid border-2 border-primary"
+            className="h-72 rounded-2xl border-solid border-2 border-primary"
           ></Image>
         </div>
-        <div className="text-justify col-span-8">
+        <div className="text-justify md:col-span-8">
           <p className="font-text text-sm md:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
             facilis ad delectus, earum sequi molestias vitae praesentium quia

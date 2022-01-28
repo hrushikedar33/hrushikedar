@@ -26,7 +26,9 @@ function Navbar() {
   return (
     <nav className="x-adj py-2 sticky top-0 z-10 shadow-md bg-primary/25 backdrop-blur-sm transition-effect">
       <div className="main-set flex justify-between items-center">
-        <h2 className="font-bold cursor-pointer">Hrushi Kedar</h2>
+        <Link className="font-bold" href="/" passHref>
+          <h1 className="cursor-pointer">Hrushi Kedar</h1>
+        </Link>
         <div className="hidden md:block">
           {pages.map((x, i) => (
             <Link key={i} href={x.link} passHref>

@@ -11,7 +11,7 @@ function Hero() {
     >
       <div>
         <h1 className="text-2xl md:text-4xl ">Hey! There 👋</h1>
-        <h1 className="text-6xl my-1">
+        <h1 className="md:text-6xl text-5xl my-1">
           <span className="text-primary transition-effect block md:inline">
             Hrushikesh
           </span>
